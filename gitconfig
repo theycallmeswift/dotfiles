@@ -1,0 +1,9 @@
+[color]
+branch = auto
+diff = auto
+status = auto
+[user]
+name = Swift
+email = theycallmeswift@gmail.com
+[alias]
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

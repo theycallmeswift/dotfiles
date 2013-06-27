@@ -1,0 +1,15 @@
+# ruby/rails
+alias bake="bundle exec rake"
+alias be="bundle exec"
+alias cleargems="rvm gemset empty"
+
+# filesystem
+alias ..="cd ../"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ls="ls -G"
+alias mkdir="mkdir -p"
+alias la="ls -a"
+
+# misc.
+alias timestamp="date +%Y%m%d%H%M%S"

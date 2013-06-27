@@ -1,0 +1,6 @@
+*.DS_Store
+*.sw[nop]
+*.pyc
+vim/bundle
+*~
+custom.vim

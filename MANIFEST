@@ -1,0 +1,12 @@
+ackrc
+aliasrc
+editrc
+gemrc
+gitconfig
+inputrc
+tmux.conf
+vim
+vimrc
+zsh_profile.d
+zshenv
+zshrc
