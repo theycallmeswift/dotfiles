@@ -8,6 +8,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'othree/html5.vim'
 Bundle 'sickill/vim-pasta'
 Bundle 'tpope/vim-rails'
+Bundle 'kchmck/vim-coffee-script'
 
 syntax on
 filetype plugin indent on

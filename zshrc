@@ -5,3 +5,6 @@ for zsh_source in $HOME/.zsh_profile.d/*.zsh; do
 done
 
 current
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

@@ -4,6 +4,8 @@ editrc
 gemrc
 gitconfig
 inputrc
+irbrc
+rdebugrc
 tmux.conf
 vim
 vimrc
