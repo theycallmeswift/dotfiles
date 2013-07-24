@@ -13,3 +13,4 @@ alias la="ls -a"
 
 # misc.
 alias timestamp="date +%Y%m%d%H%M%S"
+alias flushdns="dscacheutil -flushcache;sudo killall -HUP mDNSResponder"

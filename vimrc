@@ -9,8 +9,10 @@ Bundle 'othree/html5.vim'
 Bundle 'sickill/vim-pasta'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'marcus/vim-mustang'
+Bundle 'goatslacker/mango.vim'
 
-syntax on
+syntax enable
 filetype plugin indent on
 
 " History & Backup
@@ -32,7 +34,8 @@ map <Leader>/ :nohlsearch<cr>
 
 " Colors & Visuals
 set t_Co=256
-colorscheme koehler
+set background=dark
+colorscheme mango
 set cursorline
 set number
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
