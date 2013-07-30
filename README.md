@@ -29,7 +29,7 @@ My dotfiles take advantage of a lot of the utilities that ZSH offers, so
 you'll need to switch to ZSH if you're not using it already.
 
 ```
-$ brew install zsh && chsh -s zsh
+$ brew install zsh && chsh -s /bin/zsh
 ```
 
 Make sure you restart your terminal for this to take effect.
