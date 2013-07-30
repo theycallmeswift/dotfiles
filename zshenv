@@ -1,6 +1,6 @@
 typeset -U path # ensure unique paths within PATH
 
-path=($HOME/.dotfiles/bin /usr/local/Cellar/python/2.7.5/bin /usr/local/share/python /usr/local/bin $path)
+path=($HOME/.dotfiles/bin /usr/local/bin $path)
 
 # General
 export LANG=en_US.UTF-8
