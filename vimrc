@@ -2,16 +2,6 @@ set nocompatible
 
 source $HOME/.vim/vundle.vim
 
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-haml'
-Bundle 'othree/html5.vim'
-Bundle 'sickill/vim-pasta'
-Bundle 'tpope/vim-rails'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'marcus/vim-mustang'
-Bundle 'goatslacker/mango.vim'
-
 syntax enable
 filetype plugin indent on
 
@@ -19,8 +9,6 @@ filetype plugin indent on
 set nobackup
 set nowritebackup
 set history=50
-set undolevels=10000            " number of forgivable mistakes
-set updatecount=100             " write swap file to disk every 100 chars
 
 " Clipboard
 set clipboard=unnamed
@@ -30,7 +18,6 @@ set ignorecase " ignore case
 set smartcase  " match case if a capital letter is present in the regexp
 set hlsearch   " highlight matched patterns
 set incsearch  " highlight search result as you type it
-map <Leader>/ :nohlsearch<cr>
 
 " Colors & Visuals
 set t_Co=256
@@ -63,12 +50,6 @@ set numberwidth=5
 set gdefault
 set shiftround
 set nowrap
-
-" spell check
-map <Leader>ss :setlocal spell!<cr>
-
-" Demo Time
-map <C-n> :n<ENTER>
 
 " Misc
 let mapleader=','

@@ -1,7 +1,6 @@
 # ruby/rails
 alias bake="bundle exec rake"
 alias be="bundle exec"
-alias cleargems="rvm gemset empty"
 
 # filesystem
 alias ..="cd ../"
@@ -12,5 +11,4 @@ alias mkdir="mkdir -p"
 alias la="ls -a"
 
 # misc.
-alias timestamp="date +%Y%m%d%H%M%S"
 alias flushdns="dscacheutil -flushcache;sudo killall -HUP mDNSResponder"

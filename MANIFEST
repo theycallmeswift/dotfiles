@@ -1,10 +1,10 @@
-ackrc
 aliasrc
 editrc
 gemrc
 gitconfig
 inputrc
 irbrc
+pryrc
 rdebugrc
 tmux.conf
 vim

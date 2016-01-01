@@ -1,6 +1,7 @@
 *.DS_Store
 *.sw[nop]
 *.pyc
+vim/.netrwhist
 vim/bundle
 *~
 custom.vim

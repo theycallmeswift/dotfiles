@@ -1,4 +1,18 @@
+# Vi editing mode, default is emacs
 bind -v
+
+# Keybinding
+
+## Tab Complete
 bind \\t rl_complete
+
+## Bind control+l to clear screen
 bind ^l ed-clear-screen
+
+## Bind control+r to history search
 bind ^r em-inc-search-prev
+
+# History
+
+## Only store unique values
+history unique 1
