@@ -1,9 +1,17 @@
+[push]
+  default = current
 [color]
-branch = auto
-diff = auto
-status = auto
-[user]
-name = Swift
-email = theycallmeswift@gmail.com
-[alias]
-lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[merge]
+  ff = only
+[commit]
+  template = ~/.gitmessage
+[fetch]
+  prune = true
+[rebase]
+  autosquash = true
+[include]
+  path = ~/.gitconfig.local

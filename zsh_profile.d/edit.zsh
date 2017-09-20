@@ -1,2 +1,0 @@
-# vi mode
-setopt vi

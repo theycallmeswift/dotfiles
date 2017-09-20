@@ -28,6 +28,15 @@ def target_path(file)
   File.join(ENV["HOME"], ".#{file}")
 end
 
+def run_post_installer!
+  filepath = File.join(pwd, "bin/post-installer")
+
+  if File.exist?(filepath)
+    output = `. #{filepath}`
+    puts output
+  end
+end
+
 files = File.new(File.join(pwd, "MANIFEST"), "r").read.split("\n")
 
 desc "Symlink all dotfies"
@@ -35,6 +44,8 @@ task :install do
   files.each do |file|
     Installer.new.symlink(File.join(pwd, file), target_path(file))
   end
+
+  run_post_installer!
 end
 
 desc "Remove all dotfies"

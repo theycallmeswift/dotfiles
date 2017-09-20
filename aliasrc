@@ -4,11 +4,9 @@ alias be="bundle exec"
 
 # filesystem
 alias ..="cd ../"
-alias ...="cd ../.."
-alias ....="cd ../../.."
 alias ls="ls -G"
 alias mkdir="mkdir -p"
-alias la="ls -a"
+alias la="ls -al"
 
-# misc.
-alias flushdns="dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
