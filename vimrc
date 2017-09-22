@@ -42,6 +42,8 @@ set textwidth=80                    " Make it obvious where 80 characters is
 set wildmenu                        " show list instead of just completing
 set wildmode=list:longest,full      " command <Tab> completion, list matches, then longest common part, then all.
 
+imap <Tab> <C-N>
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
