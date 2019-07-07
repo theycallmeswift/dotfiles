@@ -12,8 +12,8 @@ I use the following tools as part of my setup:
 Optionally, I use RVM and NVM for ruby and node.js version management.  You
 can find out some more details about those here:
 
- - [https://rvm.io/](https://rvm.io/)
- - [https://github.com/creationix/nvm](https://github.com/creationix/nvm)
+ - [RBENV](https://github.com/rbenv/rbenv)
+ - [NVM](https://github.com/creationix/nvm)
 
 # Install
 
