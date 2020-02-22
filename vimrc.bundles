@@ -15,10 +15,20 @@ let g:has_async = v:version >= 800 || has('nvim')
 call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
-Plug 'goatslacker/mango.vim'
-Plug 'pangloss/vim-javascript'
+
+" Shared
+Plug 'mhartington/oceanic-next'
+Plug 'jiangmiao/auto-pairs'
+Plug 'prettier/vim-prettier', { 'do': 'npm install'  }
+
+" Ruby / Rails
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
+
+" JS
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'othree/yajs.vim'
 
 if g:has_async
   Plug 'w0rp/ale'

@@ -91,6 +91,10 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" Formating
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
@@ -99,7 +103,7 @@ let g:html_indent_tags = 'li\|p'
 let g:is_posix = 1
 
 " Colors & Visuals
-colorscheme mango
+colorscheme OceanicNext
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
