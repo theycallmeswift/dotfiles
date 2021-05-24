@@ -9,6 +9,7 @@ inputrc
 irbrc
 pryrc
 psqlrc
+railsrc
 tmux.conf
 vim
 vimrc

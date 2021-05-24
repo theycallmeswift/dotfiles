@@ -18,8 +18,8 @@ call plug#begin('~/.vim/bundle')
 
 " Shared
 Plug 'mhartington/oceanic-next'
+Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
-Plug 'prettier/vim-prettier', { 'do': 'npm install'  }
 
 " Ruby / Rails
 Plug 'tpope/vim-rails'
@@ -27,12 +27,11 @@ Plug 'vim-ruby/vim-ruby'
 
 " JS
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'othree/yajs.vim'
+Plug 'maxmellon/vim-jsx-pretty'
 
-if g:has_async
-  Plug 'w0rp/ale'
-endif
+" TS
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

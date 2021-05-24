@@ -10,4 +10,8 @@ else
 fi
 vim -u "$HOME"/.vimrc.bundles +PlugUpdate +PlugClean! +qa
 
+if test $(which npm); then
+  npm install -g prettier @prettier/plugin-ruby
+fi
+
 reset -Q

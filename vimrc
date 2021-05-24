@@ -68,21 +68,26 @@ augroup vimrcEx
     \ endif
 
   " Set syntax highlighting for specific file types
-  autocmd BufRead,BufNewFile Appraisals set filetype=ruby
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 
-  " ALE linting events
-  if g:has_async
-    set updatetime=1000
-    let g:ale_lint_on_text_changed = 0
-    autocmd CursorHold * call ale#Queue(0)
-    autocmd CursorHoldI * call ale#Queue(0)
-    autocmd InsertEnter * call ale#Queue(0)
-    autocmd InsertLeave * call ale#Queue(0)
-  else
-    echoerr "The thoughtbot dotfiles require NeoVim or Vim 8"
-  endif
+  " Keep syntax highlighting in sync
+  autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+  autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+  " Linting
+  let g:ale_fix_on_save = 1
+  let g:ale_lint_on_save = 1
+  let g:ale_ruby_rubocop_executable = 'bundle'
+  let g:ale_ruby_rubocop_auto_correct_all = 1
+  let g:ale_fixers = {
+  \   'css': ['prettier'],
+  \   'javascript': ['prettier', 'eslint'],
+  \   'json': ['prettier'],
+  \   'python': ['yapf'],
+  \   'typescript': ['prettier', 'eslint'],
+  \   'ruby': ['rubocop'],
+  \}
 augroup END
 
 " Get off my lawn
@@ -90,10 +95,6 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
-
-" Formating
-let g:prettier#autoformat = 1
-let g:prettier#autoformat_require_pragma = 0
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
