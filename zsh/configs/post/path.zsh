@@ -1,5 +1,5 @@
 # ensure dotfiles bin directory is loaded first
-PATH="$HOME/.bin:/usr/local/sbin:$PATH"
+PATH="$HOME/.bin:/usr/local/sbin:/opt/homebrew/bin:$PATH"
 
 # Load rbenv
 if command -v rbenv >/dev/null; then

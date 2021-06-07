@@ -8,7 +8,9 @@ set backspace=eol,start,indent      " allow backspacing over indent, eol, & star
 set clipboard=unnamed
 set colorcolumn=+1                  " Make it obvious where 80 characters is
 set cursorline                      " highlight the screen line of the cursor
-set diffopt+=vertical               " Always use vertical diffs
+if &diff
+  set diffopt+=vertical             " Use vertical diffs
+endif
 set encoding=utf-8                  " Necessary to show unicode glyphs
 set expandtab                       " use spaces when <Tab> is inserted
 set gdefault                        " default to /g when substituting
