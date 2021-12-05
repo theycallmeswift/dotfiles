@@ -13,6 +13,7 @@
   prune = true
 [rebase]
   autosquash = true
+	autoStash = true
 [include]
   path = ~/.gitconfig.local
 [filter "lfs"]
@@ -23,3 +24,7 @@
 [user]
 	name = Swift
 	email = theycallmeswift@gmail.com
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main

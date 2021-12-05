@@ -23,3 +23,14 @@ $ cd ~/.dotfiles && rake install
 $ git clone https://github.com/gmarik/vundle.git ~/.dotfiles/vim/bundle/vundle
 $ vim +BundleInstall +qall
 ```
+
+# Dependencies / Utilities
+
+- `brew`
+- `rbenv`
+- `nvm`
+- `git`
+- `reattach-to-user-namespace `
+- `tmux`
+- `heroku`
+- `ack`

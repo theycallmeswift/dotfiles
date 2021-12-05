@@ -21,6 +21,18 @@ if [ -s "$PG_APP_PATH" ]; then
   PATH="$PG_APP_PATH:$PATH"
 fi
 
+# Load Rust
+export RUST_PATH="$HOME/.cargo/bin"
+if [ -s "$RUST_PATH" ]; then
+  PATH="$RUST_PATH:$PATH"
+fi
+
+# Load JDK
+export JDK_PATH="/opt/homebrew/opt/openjdk/bin"
+if [ -s "$JDK_PATH" ]; then
+  PATH="$JDK_PATH:$PATH"
+fi
+
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"
 

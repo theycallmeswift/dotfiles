@@ -85,10 +85,13 @@ augroup vimrcEx
   let g:ale_fixers = {
   \   'css': ['prettier'],
   \   'javascript': ['prettier', 'eslint'],
+  \   'javascriptreact': ['prettier', 'eslint'],
   \   'json': ['prettier'],
   \   'python': ['yapf'],
   \   'typescript': ['prettier', 'eslint'],
+  \   'typescriptreact': ['prettier', 'eslint'],
   \   'ruby': ['rubocop'],
+  \   'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'],
   \}
 augroup END
 
